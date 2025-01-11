@@ -1,5 +1,4 @@
 using Microsoft.AspNetCore.Mvc;
-using SocialApp.Models;
 using System.Diagnostics;
 
 namespace SocialApp.Controllers
@@ -21,12 +20,6 @@ namespace SocialApp.Controllers
         public IActionResult Privacy()
         {
             return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
+        }       
     }
 }
